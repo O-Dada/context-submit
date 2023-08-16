@@ -1,14 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
-import { useCart } from "../context/CartContext"; // Adjust the path as needed
+import { useCart } from "../context/CartContext";
 
-const dummy = {
-  title: "iPhone",
-  price: "$Price",
-  description: "Description",
-};
-
-function Items() {
+function CartItem() {
   const { setTotalItems, setTotalPrice } = useCart();
 
   const [productData, setProductData] = useState(dummy);
@@ -54,4 +48,4 @@ function Items() {
   );
 }
 
-export default Items;
+export default CartItem;
