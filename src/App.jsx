@@ -2,7 +2,9 @@
 import { CartProvider } from "./components/CartContext";
 import "./App.css";
 import Items from "./components/items";
-import { CartPrice } from "./components/CartPrice";
+// import { CartPrice } from "./components/CartPrice";
+// import { CartPrice } from "./components/CartPrice";
+import CartPrice from "./components/CartPrice";
 
 function App() {
   // const [count, setCount] = useState(0);
