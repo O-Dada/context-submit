@@ -36,20 +36,20 @@ function Items() {
     fetchProductData();
   }, []);
 
-  // const addToCart = () => {
-  //   setTotalItems((prevTotalItems) => prevTotalItems + 1);
-  //   setTotalPrice(
-  //     (prevTotalPrice) =>
-  //       prevTotalPrice + parseFloat(productData.price.replace("$", ""))
-  //   );
-  // };
+  const addToCart = () => {
+    setTotalItems((prevTotalItems) => prevTotalItems + 1);
+    setTotalPrice(
+      (prevTotalPrice) =>
+        prevTotalPrice + parseFloat(productData.price.replace("$", ""))
+    );
+  };
 
   return (
     <div>
       <h1>{productData.title}</h1>
       <p>{productData.description}</p>
       <p>{productData.price}</p>
-      {/* <button onClick={addToCart}>Add to cart</button> */}
+      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
